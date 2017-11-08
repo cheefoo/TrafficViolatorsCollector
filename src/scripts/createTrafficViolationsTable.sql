@@ -1,0 +1,41 @@
+CREATE TABLE trafficviolation
+(
+   dateofstop      varchar(100),
+   timeofstop      varchar(100),
+   agency          varchar(100),
+   subagency       varchar(100),
+   description     varchar(300),
+   location        varchar(100),
+   latitude        varchar(100),
+   longtitude      varchar(100),
+   accident        varchar(100),
+   belts           varchar(100),
+   personalinjury  varchar(100),
+   propertydamage  varchar(100),
+   fatal           varchar(100),
+   commlicense     varchar(100),
+   hazmat          varchar(100),
+   commvehicle     varchar(100),
+   alcohol         varchar(100),
+   workzone        varchar(100),
+   state           varchar(100),
+   veichletype     varchar(100),
+   year            varchar(100),
+   make            varchar(100),
+   model           varchar(100),
+   color           varchar(100),
+   violationtype   varchar(100),
+   charge          varchar(100),
+   article         varchar(100),
+   contributed     varchar(100),
+   race            varchar(100),
+   gender          varchar(100),
+   drivercity      varchar(100),
+   driverstate     varchar(100),
+   dlstate         varchar(100),
+   arresttype      varchar(100),
+   geolocation     varchar(100)
+);
+
+
+COMMIT;

@@ -87,6 +87,13 @@ public class TrafficViolation
         this.geolocation = geolocation;
     }
 
+
+
+    public void setDateofstop(String dateofstop)
+    {
+        this.dateofstop = dateofstop;
+    }
+
     @Override
     public String toString()
     {

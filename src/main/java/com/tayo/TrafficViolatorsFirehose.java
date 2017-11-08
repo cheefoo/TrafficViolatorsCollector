@@ -15,6 +15,9 @@ import java.util.Arrays;
 /**
  * Created by temitayo on 6/14/17.
  *  Usage   com.tayo.TrafficViolatorsFirehose TrafficViolators2 us-east-1 /Users/temitayo/Downloads/Traffic_Violations.csv
+ *  mvn exec:java -Dexec.mainClass=com.tayo.TrafficViolatorsFirehose -Dexec.args="CFNParams00123 us-west-2 /rows.csv"
+ *  mvn -f /TrafficViolatorsCollector/pom.xml exec:java -Dexec.mainClass=com.tayo.TrafficViolatorsFirehose -Dexec.args="fhtf00001 us-west-2 /rows.csv"
+ *  mvn -f /TrafficViolatorsCollector/pom.xml exec:java -Dexec.mainClass=com.tayo.TrafficViolatorsFirehose -Dexec.args="ec2fh1705 us-west-2 /rows.csv" > /home/ec2-user/fh.log 2>&1 &  disown -h %1
  */
 public class TrafficViolatorsFirehose
 {
@@ -33,6 +36,7 @@ public class TrafficViolatorsFirehose
             System.exit(1);
 
         }
+        //check if delivery stream
         String streamName =  args[0];
         String region = args[1];
         String fileNamePath = args[2];
